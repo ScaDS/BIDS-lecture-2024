@@ -12,7 +12,20 @@ This work is licensed by [Robert Haase](https://haesleinhuepf.github.io), [ScaDS
 This repository contains training resources for Students at Uni Leipzig who want to dive into bio-image data science with Python. 
 The material will develop between April and July 2024 and shared here in this github repository.
 
-Planned course contents:
+## Teaching Goal
+
+Students learn the full workflow of common bio-image data
+science projects to a degree that they can execute a scientific
+data analysis project in this context on their own. They will be
+familiar with common bio-image analysis algorithms and
+workflows, how to choose them according to a scientific goal,
+and how to measure quality of derived results. Attending the
+lecture and executing the practicals qualifies the students to
+work as bio-image data scientist in the pharmaceutical industry
+or basic biological research.
+
+## Planned course contents
+
 * Basics of microscopy image acquistion
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
