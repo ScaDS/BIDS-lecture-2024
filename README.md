@@ -24,9 +24,17 @@ lecture and executing the practicals qualifies the students to
 work as bio-image data scientist in the pharmaceutical industry
 or basic biological research.
 
-## Planned course contents
+## Course contents
 
-* Basics of microscopy image acquistion
+* [Introduction to Bio-image Data Science]() (Apr 2nd 2024)
+  * Basics of microscopy
+  * Introduction to Bio-image Analysis
+  * Exercises:
+    * [Setting up a local environment](01a_setting_up_local_environment/readme.md)
+    * [Setting up Jupyter Hub at Scientific Computing / Leipzig University](01b_setting_up_sc_ulei_environment/readme.md)
+    * [Execute the trailer notebook](01c_testing_environment/trailer.ipynb)
+
+## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
 * Quality Assurance
@@ -34,6 +42,8 @@ or basic biological research.
 * Deep Learning techniques for image denoising and segmentation
 * Multi-modal Deep Learning + Large Language Models for bioimage analysis
 * Prompt-Engineering 
+
+
 
 ## Pre-requesites
 * Basic Python programming skills are required
