@@ -26,7 +26,7 @@ or basic biological research.
 
 ## Course contents
 
-* [Introduction to Bio-image Data Science]() (Apr 2nd 2024)
+* [Introduction to Bio-image Data Science](01_Introduction_BIDS_2024.pdf) (Apr 2nd 2024)
   * Basics of microscopy
   * Introduction to Bio-image Analysis
   * Exercises:
