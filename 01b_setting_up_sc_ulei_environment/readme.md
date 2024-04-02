@@ -45,8 +45,8 @@ pip install stackview --user
 ... and reload the page (in browser)
 
 
-Just in case you want to install more packages later, reopen the terminal and install it:
+Just in case you want to install more packages later, reopen the terminal, activate the environment and install them:
 ```
-conda activate bio39
+conda activate my_first_env 
 pip install other-package
 ```
