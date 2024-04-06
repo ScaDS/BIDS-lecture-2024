@@ -34,6 +34,23 @@ or basic biological research.
     * [Setting up Jupyter Hub at Scientific Computing / Leipzig University](01b_setting_up_sc_ulei_environment/readme.md)
     * [Execute the trailer notebook](01c_testing_environment/trailer.ipynb)
 
+* [Research Data Management](02_Introduction_RDM_2024.pdf) (Apr 9th 2024)
+  * Introduction to Research Data Management
+    * Research Data Life Cycle
+    * Data Management Plans
+  * Sharing and licensing
+    * The FAIR Principles
+    * Creative Common License
+    * Open Source Licenses
+  * Version control with git
+  * Exercises:
+    * [Installation](02a_remote_files/readme.md)
+    * [Accessing the nextcloud](02a_remote_files/nextcloud.ipynb)
+    * [Exploring the BioImage Archive](02a_remote_files/exploring_bioimage_archive.ipynb)
+    * [Exploring Meta Data on Zenodo](02b_meta_data/exploring_zenodo.ipynb)
+    * [Exploring Meta Data on DOI.org](02b_meta_data/exploring_doi.ipynb)
+    * [Sending pull-requests on GitHub](02c_pull_requests/readme.md)
+
 ## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
