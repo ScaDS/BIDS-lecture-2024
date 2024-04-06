@@ -1,6 +1,6 @@
 # Sending pull-requests
 
-This file contains a tpyo. Please help to solve the problem:
+This file contains a typo. Please help to solve the problem:
 * Fork this repository
 * Clone it
 * Edit the file
