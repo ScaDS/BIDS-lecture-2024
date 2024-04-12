@@ -1,3 +1,5 @@
 /.idea/
 .ipynb_checkpoints
 __pycache__
+
+/02a_remote_files/data/
