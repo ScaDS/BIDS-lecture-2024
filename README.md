@@ -42,14 +42,26 @@ or basic biological research.
     * The FAIR Principles
     * Creative Common License
     * Open Source Licenses
-  * Version control with git
   * Exercises:
     * [Installation](02a_remote_files/readme.md)
     * [Accessing the nextcloud](02a_remote_files/nextcloud.ipynb)
     * [Exploring the BioImage Archive](02a_remote_files/exploring_bioimage_archive.ipynb)
     * [Exploring Meta Data on Zenodo](02b_meta_data/exploring_zenodo.ipynb)
     * [Exploring Meta Data on DOI.org](02b_meta_data/exploring_doi.ipynb)
-    * [Sending pull-requests on GitHub](02c_pull_requests/readme.md)
+
+* [Research Software Management and Image Processing](03_RSM_Image_Processing.pdf)
+  * Research Software Management
+    * Version control with git
+    * Conda environments
+    * Software quality indicators
+  * Image Processing
+    * Image visualization
+    * Image filtering
+    * Morphological operations
+  * Exercises:
+    * [Sending pull-requests on GitHub](03a_pull_requests/readme.md)
+    * [Image processing](03b_image_processing/)
+    * [Breaking backwards compatibility](03c_dependency_management/breaking_backwards_compatibility.ipynb)
 
 ## Planned contents
 * Image Data Management
