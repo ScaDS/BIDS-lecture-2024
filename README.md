@@ -63,6 +63,22 @@ or basic biological research.
     * [Image processing](03b_image_processing/)
     * [Breaking backwards compatibility](03c_dependency_management/breaking_backwards_compatibility.ipynb)
 
+* [Image Segmenation](04_Image_segmentation.pdf)
+  * Binary images
+    * Otsu Thresholding
+    * Morphological operations
+  * Labeling algorithms
+    * Connected component labeling
+    * Voronoi-Labeling
+    * Watershed-algorithm
+  * Napari
+  * Exercises
+    * [Image segmentation with Python](https://github.com/ScaDS/BIDS-lecture-2024/tree/main/04a_image_segmentation)
+    * [Using Napari with Python](04b_napari_notebooks/napari_intro.ipynb)
+    * [Setting up workflows in Napari interactively](04b_napari_notebooks/notebook-assistant.md)
+    * [Exporting notebooks from Napari](04b_napari_notebooks/notebook_export.md)
+
+
 ## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
