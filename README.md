@@ -86,8 +86,8 @@ or basic biological research.
     * [Metrics](https://www.nature.com/articles/s41592-023-02151-z)
   * Feature Extraction
   * Exercises
-    * [Installation](05a_surface reconstruction/readme.md)
-    * [Working with surface meshes](05a_surface reconstruction/)
+    * [Installation](<05a_surface reconstruction/readme.md>)
+    * [Working with surface meshes](<05a_surface reconstruction/>)
     * [Segmentation quality assurance](05b_quality_assurance/)
     * [Feature extraction](05c_feature_extraction/) 
 
