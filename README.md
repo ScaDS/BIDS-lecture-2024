@@ -78,6 +78,18 @@ or basic biological research.
     * [Setting up workflows in Napari interactively](04b_napari_notebooks/notebook-assistant.md)
     * [Exporting notebooks from Napari](04b_napari_notebooks/notebook_export.md)
 
+* [Surface extraction, QA and Feature Extraction](05_Surface_Recon_QA.pdf)
+  * Surface meshes
+    * Marching Cubes algorithm
+    * Surface simplifaction
+  * Segmentation Quality Assurance
+    * [Metrics](https://www.nature.com/articles/s41592-023-02151-z)
+  * Feature Extraction
+  * Exercises
+    * [Installation](05a_surface reconstruction/readme.md)
+    * [Working with surface meshes](05a_surface reconstruction/)
+    * [Segmentation quality assurance](05b_quality_assurance/)
+    * [Feature extraction](05c_feature_extraction/) 
 
 ## Planned contents
 * Image Data Management
