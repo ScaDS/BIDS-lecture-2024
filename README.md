@@ -100,6 +100,17 @@ or basic biological research.
   * [ChatBot Graphical User Interface](06_chatbots/gui.ipynb)
   * [Excursion: ScaDS.AI MeetUp](https://www.meetup.com/de-DE/big-data-and-ai-saxony/events/300284128/)
 
+* [GPU-accelerated and distributed image processing](07_distributed_gpu_computing.pdf)
+  * GPU-accleration / parallelization
+  * OpenCL / CUDA
+  * Tiled image processing
+  * Bland Altman Plots
+  * Exercises:
+    * [CUDA installation](07a_gpu_acceleration/readme.md)
+    * [GPU-accelerated image processing using OpenCL and CUDA](07a_gpu_acceleration/)
+    * [Tiled image processing](07b_tiled_image_processing)
+    * [Method comparison: Bland-Altman Plots](07c_bland_altman/bland_altman_analysis.ipynb)
+
 ## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
