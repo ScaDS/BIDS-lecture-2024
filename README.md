@@ -26,7 +26,7 @@ or basic biological research.
 
 ## Course contents
 
-* [Introduction to Bio-image Data Science](01_Introduction_BIDS_2024.pdf) (Apr 2nd 2024)
+* [Introduction to Bio-image Data Science](01_Introduction_BIDS_2024.pdf) (April 2nd 2024)
   * Basics of microscopy
   * Introduction to Bio-image Analysis
   * Exercises:
@@ -34,7 +34,7 @@ or basic biological research.
     * [Setting up Jupyter Hub at Scientific Computing / Leipzig University](01b_setting_up_sc_ulei_environment/readme.md)
     * [Execute the trailer notebook](01c_testing_environment/trailer.ipynb)
 
-* [Research Data Management](02_Introduction_RDM_2024.pdf) (Apr 9th 2024)
+* [Research Data Management](02_Introduction_RDM_2024.pdf) (April 9th 2024)
   * Introduction to Research Data Management
     * Research Data Life Cycle
     * Data Management Plans
@@ -49,7 +49,7 @@ or basic biological research.
     * [Exploring Meta Data on Zenodo](02b_meta_data/exploring_zenodo.ipynb)
     * [Exploring Meta Data on DOI.org](02b_meta_data/exploring_doi.ipynb)
 
-* [Research Software Management and Image Processing](03_RSM_Image_Processing.pdf)
+* [Research Software Management and Image Processing](03_RSM_Image_Processing.pdf) (April 16th 2024)
   * Research Software Management
     * Version control with git
     * Conda environments
@@ -63,7 +63,7 @@ or basic biological research.
     * [Image processing](03b_image_processing/)
     * [Breaking backwards compatibility](03c_dependency_management/breaking_backwards_compatibility.ipynb)
 
-* [Image Segmenation](04_Image_segmentation.pdf)
+* [Image Segmenation](04_Image_segmentation.pdf) (April 23th 2024)
   * Binary images
     * Otsu Thresholding
     * Morphological operations
@@ -78,7 +78,7 @@ or basic biological research.
     * [Setting up workflows in Napari interactively](04b_napari_notebooks/notebook-assistant.md)
     * [Exporting notebooks from Napari](04b_napari_notebooks/notebook_export.md)
 
-* [Surface extraction, QA and Feature Extraction](05_Surface_Recon_QA.pdf)
+* [Surface extraction, QA and Feature Extraction](05_Surface_Recon_QA.pdf) (April 30th 2024)
   * Surface meshes
     * Marching Cubes algorithm
     * Surface simplifaction
@@ -91,7 +91,7 @@ or basic biological research.
     * [Segmentation quality assurance](05b_quality_assurance/)
     * [Feature extraction](05c_feature_extraction/)
 
-* [Prompt Engineering and ChatBots](06_Chatbots.pdf)
+* [Prompt Engineering and ChatBots](06_Chatbots.pdf)  (May 7th 2024)
   * [Installation instructions](06_chatbots/readme.md)
   * [The OpenAI API](06_chatbots/01_openai_api.ipynb)
   * [A basic Chatbot with memory](06_chatbots/02_chatbot.ipynb)
@@ -99,6 +99,17 @@ or basic biological research.
   * [Prompt Engineering](06_chatbots/04_prompt_engineering.ipynb)
   * [ChatBot Graphical User Interface](06_chatbots/gui.ipynb)
   * [Excursion: ScaDS.AI MeetUp](https://www.meetup.com/de-DE/big-data-and-ai-saxony/events/300284128/)
+
+* [GPU-accelerated and distributed image processing](07_distributed_gpu_computing.pdf) (May 14th 2024)
+  * GPU-accleration / parallelization
+  * OpenCL / CUDA
+  * Tiled image processing
+  * Bland Altman Plots
+  * Exercises:
+    * [CUDA installation](07a_gpu_acceleration/readme.md)
+    * [GPU-accelerated image processing using OpenCL and CUDA](07a_gpu_acceleration/)
+    * [Tiled image processing](07b_tiled_image_processing)
+    * [Method comparison: Bland-Altman Plots](07c_bland_altman/bland_altman_analysis.ipynb)
 
 ## Planned contents
 * Image Data Management
