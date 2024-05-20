@@ -111,6 +111,15 @@ or basic biological research.
     * [Tiled image processing](07b_tiled_image_processing)
     * [Method comparison: Bland-Altman Plots](07c_bland_altman/bland_altman_analysis.ipynb)
 
+* [Supervised and unsupervised Machine Learning](08_Sup_Unsup_Machine_Learning.pdf) (May 21st 2024)
+  * Random Forest Classifiers
+  * Dimensionality Reduction
+  * Exercises:
+    * [Interactive Parameter Exploration](08a_hypothesis_generation/interactive_parameter_exploration.ipynb)
+    * [Interactive Pixel Classification](08b_pixel_and_object_classification/interactive_pixel_classification/readme.md)
+    * [Interactive Object Classification](08b_pixel_and_object_classification/interactive_object_classification/readme.md)
+    * [Random Forest Classifier Notebooks](08b_pixel_and_object_classification)
+
 ## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
