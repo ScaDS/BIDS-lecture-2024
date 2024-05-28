@@ -119,6 +119,15 @@ or basic biological research.
     * [Interactive Pixel Classification](08b_pixel_and_object_classification/interactive_pixel_classification/readme.md)
     * [Interactive Object Classification](08b_pixel_and_object_classification/interactive_object_classification/readme.md)
     * [Random Forest Classifier Notebooks](08b_pixel_and_object_classification)
+    
+* [Deep Learning for image denoising and segmentation](09_Deep_Learning.pdf) (May 28th 2024)
+  * Denoising using CARE, noise2noise, noise2void
+  * Segmentation using StarDist, CellPose and micro-sam
+  * Exercises
+    * [noise2void](09a_dl_denoising/noise2void.ipynb)
+    * [CellPose](09b_dl_segmentation/cellpose.ipynb)
+    * [StarDist](09b_dl_segmentation/stardist.ipynb)
+    * [Micro-SAM](09c_micro_sam/micro-sam.ipynb)
 
 ## Planned contents
 * Image Data Management

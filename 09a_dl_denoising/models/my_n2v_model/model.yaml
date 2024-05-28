@@ -1,0 +1,82 @@
+name: my_n2v_model
+description: none
+cite:
+- text: "Krull, A. and Buchholz, T. and Jug, F. Noise2void - learning denoising from
+    single noisy images.\nProceedings of the IEEE Conference on Computer Vision and
+    Pattern Recognition (2019)"
+  doi: 10.1109/CVPR.2019.00223
+authors:
+- unknown
+language: python
+framework: tensorflow
+format_version: 0.2.0-csbdeep
+source: n2v
+test_input: testinput.tif
+test_output: testoutput.tif
+inputs:
+- name: input
+  axes: byxc
+  data_type: float32
+  data_range:
+  - -inf
+  - inf
+  halo:
+  - 0
+  - 22
+  - 22
+  - 0
+  shape:
+    min:
+    - 1
+    - 4
+    - 4
+    - 1
+    step:
+    - 1
+    - 4
+    - 4
+    - 0
+outputs:
+- name: Placeholder:0
+  axes: byxc
+  data_type: float32
+  data_range:
+  - -inf
+  - inf
+  shape:
+    reference_input: input
+    scale:
+    - 1
+    - 1
+    - 1
+    - 1
+    offset:
+    - 0
+    - 0
+    - 0
+    - 0
+training:
+  source: n2v.train()
+  kwargs: {means: ['39180.465'], stds: ['18693.236'], n_dim: 2, axes: YXC, n_channel_in: 1,
+    n_channel_out: 1, unet_residual: false, unet_n_depth: 2, unet_kern_size: 3, unet_n_first: 32,
+    unet_last_activation: linear, unet_input_shape: [null, null, 1], train_loss: mse,
+    train_epochs: 20, train_steps_per_epoch: 63, train_learning_rate: 0.0004, train_batch_size: 4,
+    train_tensorboard: true, train_checkpoint: weights_best.h5, train_reduce_lr: {
+      factor: 0.5, patience: 10}, batch_norm: true, n2v_perc_pix: 0.198, n2v_patch_shape: [
+      64, 64], n2v_manipulator: uniform_withCP, n2v_neighborhood_radius: 5, single_net_per_channel: true,
+    blurpool: false, skip_skipone: false, structN2Vmask: null, probabilistic: false}
+prediction:
+  weights:
+    source: ./variables/variables
+  preprocess:
+  - kwargs:
+      mean:
+      - 39180.465
+      stdDev:
+      - 18693.236
+  postprocess:
+  - kwargs:
+      mean:
+      - 39180.465
+      stdDev:
+      - 18693.236
