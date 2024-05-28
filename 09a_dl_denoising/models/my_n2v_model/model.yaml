@@ -57,7 +57,7 @@ outputs:
     - 0
 training:
   source: n2v.train()
-  kwargs: {means: ['39180.414'], stds: ['18693.223'], n_dim: 2, axes: YXC, n_channel_in: 1,
+  kwargs: {means: ['39180.465'], stds: ['18693.236'], n_dim: 2, axes: YXC, n_channel_in: 1,
     n_channel_out: 1, unet_residual: false, unet_n_depth: 2, unet_kern_size: 3, unet_n_first: 32,
     unet_last_activation: linear, unet_input_shape: [null, null, 1], train_loss: mse,
     train_epochs: 20, train_steps_per_epoch: 63, train_learning_rate: 0.0004, train_batch_size: 4,
@@ -71,12 +71,12 @@ prediction:
   preprocess:
   - kwargs:
       mean:
-      - 39180.414
+      - 39180.465
       stdDev:
-      - 18693.223
+      - 18693.236
   postprocess:
   - kwargs:
       mean:
-      - 39180.414
+      - 39180.465
       stdDev:
-      - 18693.223
+      - 18693.236
