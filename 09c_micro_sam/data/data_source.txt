@@ -1,0 +1,6 @@
+This folder contains data from C. Pape, licensed CC-BY 4.0 originating from here:
+
+https://zenodo.org/records/5092850
+
+License:
+https://creativecommons.org/licenses/by/4.0/
