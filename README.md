@@ -127,6 +127,7 @@ or basic biological research.
     * [noise2void](09a_dl_denoising/noise2void.ipynb)
     * [CellPose](09b_dl_segmentation/cellpose.ipynb)
     * [StarDist](09b_dl_segmentation/stardist.ipynb)
+    * [Micro-SAM](09c_micro_sam/micro-sam.ipynb)
 
 ## Planned contents
 * Image Data Management
