@@ -129,6 +129,15 @@ or basic biological research.
     * [StarDist](09b_dl_segmentation/stardist.ipynb)
     * [Micro-SAM](09c_micro_sam/micro-sam.ipynb)
 
+* [Large Language Models for Function Calling](10_function_calling.pdf) (June 4th 2024)
+  * Generative Artificial Intelligence
+  * Transformers
+  * Function Calling
+  * Exercises
+    * [Installation](10a_function_calling/readme.md)
+    * [Function Calling](10a_function_calling)
+    * [Jupyter Magics / Chat-bots with image processing capabilities](10b_chatbots_processing_images/extending_jupyter_notebooks.ipynb)
+
 ## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
