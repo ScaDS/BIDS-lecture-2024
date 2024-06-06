@@ -1,0 +1,120 @@
+
+
+Question:
+How can I display an image with a slider and label showing mouse position and intensity?
+
+Answer:
+To display an image with a slider and label showing mouse position and intensity, you can use the following code:
+```python
+stackview.annotate(image, labels)
+```
+
+
+Question:
+How can I allow cropping an image along all axes?
+
+Answer:
+You can crop an image along all axes using the following function:
+```python
+stackview.crop(image)
+```
+
+
+Question:
+How can I show an image stored in a variable `image` and a segmented image stored in a variable `labels` on top?
+
+Answer:
+To show an image and a segmented image on top, you can use the `curtain` function with parameters `image`, `labels`, and optional `alpha`:
+```python
+stackview.curtain(image, labels, alpha: float = 1)
+```
+
+
+Question:
+How can I display an image stored in a variable `image` and enable slicing in three dimensions?
+
+Answer:
+You can display an image and enable slicing in three dimensions using the `orthogonal` function and passing the `image` as a parameter:
+```python
+stackview.orthogonal(image)
+```
+
+
+Question:
+How can I build a user interface with sliders for numeric parameters?
+
+Answer:
+To build a user interface with sliders for numeric parameters, you can use the `interact` function with a function and the `image` parameter:
+```python
+stackview.interact(func, image)
+```
+
+
+Question:
+How can I display two images side by side, with an additional overlay view of their overlap?
+
+Answer:
+You can display two images side by side with an overlay view by using the `side_by_side` function with parameters `image1` and `image2`:
+```python
+stackview.side_by_side(image1, image2)
+```
+
+
+Question:
+How can I display an image with a slider to navigate through a stack?
+
+Answer:
+To display an image with a slider for stack navigation, you can use the `slice` function with the `image` parameter:
+```python
+stackview.slice(image)
+```
+
+
+Question:
+How can I allow switching between multiple images and displaying them with a slider?
+
+Answer:
+To switch between multiple images and display them with a slider, you can use the `switch` function with a list of images as a parameter:
+```python
+stackview.switch(images:list)
+```
+
+
+Question:
+How can I perform binary edge detection by setting only surface pixels to 1 in a destination binary image?
+
+Answer:
+You can perform binary edge detection using the `binary_edge_detection` function with source and destination arrays as parameters:
+```python
+cle.binary_edge_detection(source: ndarray, destination: ndarray = None) -> ndarray
+```
+
+
+Question:
+How can I create a binary image by inverting pixel values in an input image?
+
+Answer:
+To create a binary image by inverting pixel values, you can use the `binary_not` function with source and destination arrays as parameters:
+```python
+cle.binary_not(source: ndarray, destination: ndarray = None) -> ndarray
+```
+
+
+Question:
+How can I determine centroids of all labels in an image and write coordinates in a pointlist image?
+
+Answer:
+You can determine centroids of all labels in an image and write coordinates using the `centroids_of_labels` function with labels, pointlist destination, and optional include background parameter:
+```python
+cle.centroids_of_labels(labels: ndarray, pointlist_destination: ndarray = None, include_background: bool = False) -> ndarray
+```
+
+
+Question:
+How can I analyze a label map to ensure all labels are indexed without gaps before returning the relabeled map?
+
+Answer:
+To analyze a label map and ensure all labels are indexed without gaps, you can use the `relabel_sequential` function with source and output arrays as parameters:
+```python
+cle.relabel_sequential(source: ndarray, output: ndarray = None, blocksize: int = 4096) -> ndarray
+

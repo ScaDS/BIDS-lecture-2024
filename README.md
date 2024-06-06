@@ -138,6 +138,12 @@ or basic biological research.
     * [Function Calling](10a_function_calling)
     * [Jupyter Magics / Chat-bots with image processing capabilities](10b_chatbots_processing_images/extending_jupyter_notebooks.ipynb)
 
+* [Prompt engineering, Retrieval-augmented Generation and Fine-tuning](11_prompteng_rag_finetuning) (June 11th 2024)
+  * Execises
+    * [Prompt engineering](11a_prompt_engineering)
+    * [Retrieval-augmented Generation](11b_fine_tuning)
+    * [Fine-tuning](11c_rag)
+
 ## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
