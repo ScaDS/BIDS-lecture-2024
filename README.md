@@ -144,6 +144,14 @@ or basic biological research.
     * [Retrieval-augmented Generation](11b_fine_tuning)
     * [Fine-tuning](11c_rag)
 
+* [Image generation, manipulation and vision models](12_Vision_models) (June 18th 2024)
+  * Image Generation with Dall-E and Huggingface
+  * Vision models GPT-4-Omni and LLava
+  * Exercises
+    * [Image generation](12a_image_generation)
+    * [Image manipulation](12b_image_manipulation)
+    * [Vision models](12c_vision)
+
 ## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
