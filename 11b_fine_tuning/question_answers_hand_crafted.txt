@@ -1,0 +1,199 @@
+Question:
+
+How can I open CZI or LIF files using Python?
+
+Answer:
+
+To open CZI or LIF files, you can use the AICSImageIO package. 
+In the following code the file `filename` will be loaded and 
+the image data will be stored in `image`.
+
+```python
+from aicsimageio import AICSImage
+aics_image = AICSImage("../../data/EM_C_6_c0.ome.tif")
+
+np_image = aics_image.get_image_data("ZYX")
+```
+
+Question:
+
+How can one show an image, its histogram and some basic statistics in a Jupyter notebook?
+
+Answer:
+
+You can show an image stored in the variable `image`, its histogram and some basic statistics using the `stackview` library:
+
+```python
+import stackview
+
+stackview.insight(image)
+```
+
+Question:
+
+How can I show a label image with every label in a different colour in a Jupyter notebook?
+
+Answer:
+
+You can show an image stored in the variable `image`, its histogram and some basic statistics using the `stackview` library:
+
+```python
+import stackview
+
+stackview.insight(image)
+```
+
+Question:
+
+How can I show an image in Napari?
+
+Answer:
+
+Napari is a Python based image viewer and you can use it for showing images and label images like demonstrateed in the following:
+```python
+import napari
+
+# create a viewer
+viewer = napari.Viewer()
+
+# show an image in the viewer
+viewer.add_image(image)
+
+# show a label image in the viewer
+viewer.add_labels(label_image)
+```
+
+Question:
+
+How can I remove the background in an image?
+
+Answer:
+
+You can remove the background in an image using scikit-image's `white_tophat` function. 
+In the following example the `input_image` will be background-subtracted and 
+the result is stored in `output_image`. 
+The variable `radius` allows to specify how large objects should stay while removing the background.
+
+```python
+from skimage.morphology import disk
+from skimage.morphology import white_tophat
+
+radius = 25
+
+output_image = white_tophat(input_image, disk(radius))
+```
+
+Question:
+
+How can I remove noise in an image?
+
+Answer:
+
+You can denoise an image using the median filter, e.g. using scikit-image:
+In the following example the noise from `input_image` will be removed and 
+the result is stored in `output_image`
+
+```python
+output_image = filters.median(input_image, disk(1))
+```
+
+Question:
+
+How can I segment small roundish objects, such as nuclei or granules, in an image?
+
+Answer:
+
+You can segment and label small roundish objects in an image using the Voronoi-Otsu-Labeling algorithm.
+In the following example the objects in `input_image` will be segmented and 
+the resulting objects will be labeled and stored in the `label_image`.
+The algorithm has two parameters:
+* `spot_sigma` allows you to configure how large the objects are supposed to be.
+* `outline_sigme` allows you to tune how fine the outlines should be.
+
+In this code, the python library `napari-segment-blobs-and-things-with-membranes` will be used:
+```python
+import napari_segment_blobs_and_things_with_membranes as nsbatwm
+
+label_image = nsbatwm.voronoi_otsu_labeling(input_image, spot_sigma=2, outline_sigma=2)
+```
+
+In case you are using the python library `pyclesperanto-prototype`, you can also call the algorithm like this:
+
+```python
+import pyclesperanto_prototype as cle
+
+label_image = cle.voronoi_otsu_labeling(input_image, spot_sigma=2, outline_sigma=2)
+```
+
+Question:
+
+How can I segment small roundish objects, such as nuclei, in an image in case they are very densely packed?
+
+Answer:
+
+You can segment densely packed nuclei in an image using the StarDist library.
+In the following example the nuclei in the `input_image` will be segmented and
+stored in the `label_image`:
+
+```python
+from stardist.models import StarDist2D
+from csbdeep.utils import normalize
+
+# creates a pretrained model
+model = StarDist2D.from_pretrained('2D_versatile_fluo')
+
+# normalize the image
+axis_norm = (0,1)
+image = normalize(image, 1,99.8, axis=axis_norm)
+
+# segment the image
+label_image, details = model.predict_instances(input_image)
+```
+
+Question:
+
+How can I segment cells in an image?
+
+Answer:
+
+You can use the CellPose library for that.
+In the following example the cells in the `input_image` will be segmented and
+stored in the `label_image`:
+
+```python
+from cellpose import models, io
+
+model = models.Cellpose(gpu=False, model_type='cyto')
+
+channels = [0,0] # This means we are processing single-channel greyscale images.
+
+label_image, flows, styles, diams = model.eval(input_image, diameter=None, channels=channels)
+```
+
+Question:
+
+How can I re-label labels sequentially in a label image?
+
+Answer:
+
+You can re-label labels in a label image using scikit-image's `relabel_sequential` function like this:
+
+```python
+from skimage.segmentation import relabel_sequential
+
+relabeled_image, _, _ = relabel_sequential(label_image)
+```
+
+Question:
+
+How can I expand labels e.g. with a radius of 10 pixels in a label image?
+
+Answer:
+
+You can expand labels in a label image using scikit-image's `expand_labels` function like this:
+
+```python
+from skimage.segmentation import expand_labels
+
+expanded_labels = expand_labels(filtered_label_image, distance=10)
+```
