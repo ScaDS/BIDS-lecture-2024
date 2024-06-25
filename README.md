@@ -152,6 +152,13 @@ or basic biological research.
     * [Image manipulation](12b_image_manipulation)
     * [Vision models](12c_vision)
 
+* [Benchmarking LLMs](13_quality_assurance.pdf) (June 25th 2024)
+  * Exercises
+    * [CLIP scores](13_benchmarking_llms/10_CLIP_scores.ipynb)
+    * [Counting using Vision models](13_benchmarking_llms/20_vision_models.ipynb)
+    * [Code executability](13_benchmarking_llms/30_measuring_executability.ipynb)
+    * [Common errors in generated code](13_benchmarking_llms/40_summarize_error_messages.ipynb)
+
 ## Planned contents
 * Image Data Management
 * Microscopy image analysis (filtering, segmentation, feature extraction)
