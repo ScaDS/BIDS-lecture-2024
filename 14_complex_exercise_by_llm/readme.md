@@ -1,8 +1,8 @@
 # Complex exercise solutions
-The notebooks in these folders serve as examples for solutions for the complex exercise, as an LLM would solve it. 
-Some of them are using a wrong segmentation algorithm.
+The notebooks in this folder serve as examples for solutions for the complex exercise, as an LLM would solve it. 
 Most of them would allow to pass as pre-exam requirement even though they lack details: 
 * Algorithm descriptions could be provided in more detail.
+* Some notebooks are using a wrong segmentation algorithm and fail delivering a useful result.
 * Installation instructions are commonly not detailed enough. Ideal would be if the notebook was accompanied by a requirements.txt or environment.yml file.
 * The extracted feature tables should contain the filename the features were measured in.
 The notebook [notebook_05.ipynb](notebook_05.ipynb) shall be highlighted as it provided the highest segmentation quality as self-tested by the LLM.
