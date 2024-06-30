@@ -1,0 +1,2 @@
+# Example exam
+This folder contains an example exam from the year 2022 to give students an idea of how our exam will look like. Note, in the lecture in 2022 topics were different and the target audience, too. Instead of large language models, we covered programming and biostatistics. Read more about the [lecture in 2022](https://github.com/BiAPoL/Bio-image_Analysis_with_Python/tree/035bb75d90444f14ef21876bf3fdf9e53417f87b). 
